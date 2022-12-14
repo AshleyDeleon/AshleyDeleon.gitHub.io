@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="new.css">
+    
+</head>
+<body> 
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="img/logo.png" class="logo">
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#port">DESIGNS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+
+            </ul>
+        </nav>
+
+        </div>
+    </div>
+
+</div>
+
+ <img src="img/butterflyblue.png" alt="Butterfly" class="butterflyblue">
+
+<!--about pg-->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img/aboutg.gif">
+            </div>
+            <div class="about-col-1">
+                <h5 class="sub-title">About Me</h5>
+               
+                <p style="font-size: 20;"><br>Hi I'm Ashley. I like butterflies and hate onions. Thank you for clicking!</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('purpose')"> Purpose </p>
+                <p class="tab-links" onclick="opentab('education')"> Education </p> 
+            </div>
+            <div class="tab-contents active-tab" id="purpose">
+                <ul>
+                    <li><span>Design</span><br>I created this website to practice immplementing code to design. It might not look too pretty just yet but I learned a lot in the process :)</li>
+                    <li><span>Create</span><br>I also used this website to create content for future projects</li>
+
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>Duke University</span><br>2022-2026</li>
+                    <li><span>SJHS</span><br>2017-2022</li>
+
+                </ul>
+            </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- new-->
+
+<div class="_14"><img src="img/co.gif" width="600" height="80"></div>
+
+<!--work-->
+<div id="port">
+    <div class="containter">
+        <h1 class="sub-title">Designs</h1>
+        <div class="work-list">
+            <div class="'work">
+                <a href="design.html"><img src="img/du.png" height="600px"></a>
+                <div class="layer">
+                    <h3><br>Ocean Pollution App</h3>
+                    <p><br>Created as part of a project to protect oceans in Portugal</p>
+                </div>
+            </div>
+
+            <div class="'work">
+                <a href="design.html"><img src="img/ui.png" height="600px"></a>
+                <div class="layer">
+                    <h3><br>Oranges</h3>
+                    <p><br>Created to inspire people to eat their oranges</p>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 clas="sub-title"><br>Contact Me</h1>
+                <p><br>myemail@gmail</p>
+                <p><br>0123456789</p>
+            </div>
+        </div>
+        <div class="'contact-right">
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+
+                <button type="submit" class="btn btn2">Submit</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+
+    }
+</script>
+</body>
+</html> 
+
